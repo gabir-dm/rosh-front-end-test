@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="navbar-fixed">
-            <nav class="transparent">
+            <nav class="white">
                 <div class="nav-wrapper container">
                     <a href="#" class="brand-logo black-text">Web.Dev</a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -23,7 +23,7 @@
                         <li><a href="#" class="black-text">Depoimentos</a></li>
                         <li><a href="#" class="black-text">Contato</a></li>
                         <li><a href="#" class="black-text">Sign In</a></li>
-                        <li><a class="waves-effect waves-light btn-large btn-main-color" href="#">Sign Up</a></li>
+                        <li><a class="waves-effect waves-light btn-large btn-main" href="#">Sign Up</a></li>
                     </ul>
                 </div>
             </nav>
@@ -31,14 +31,138 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <div class="container">
             <h1 class="header center">We Develop<br><span class="highlight">Shopify</span> sites</h1>
             <div class="row center">
-                <h6 class="header center-align">Salto fino em tecido. Alça de tornozelo envolvente<br>fina. Salto e bico quadrado. Dedos pontiagudos.<br>Palmilha acolchoada com desenho geométrico.</h6>
+                <h6 class="header col s10 m8 l4 offset-s1 offset-m2 offset-l4 center-align">Salto fino em tecido. Alça de tornozelo envolvente fina. Salto e bico quadrado. Dedos pontiagudos. Palmilha acolchoada com desenho geométrico.</h6>
             </div>
             <div class="row center">
-                <a class="wave-effect waves-light btn-large btn-main-color hero-btn" href="#">Contato</a>
+                <a class="wave-effect waves-light btn-large btn-main" href="#">Contato</a>
                 <a class="btn-flat" href="#"><i class="tiny material-icons right">play_arrow</i> Assista o Vídeo </a>
+            </div>
+        </div>
+
+        <!-- Logos Section -->
+        <div class="container">
+            <div id="partner-logos">
+                <a href="https://www.chase.com/"><img src="./img/chase-logo.svg" alt="Chase logo" class="p-logo"></a>
+                <a href="https://app.asana.com/"><img src="./img/asana-logo.svg" alt="Asana logo" class="p-logo"></a>
+                <a href="https://www.google.com/"><img src="./img/google-logo.svg" alt="Google logo" class="p-logo"></a>
+                <a href="https://buzzfeed.com/"><img src="./img/buzzfeed-logo.svg" alt="Buzzfeed logo" class="p-logo"></a>
+                <a href="https://www.walmart.com/"><img src="./img/walmart-logo.svg" alt="Walmart logo" class="p-logo"></a>
+            </div>
+        </div>
+
+        <!-- About Section-->
+        <div class="container">
+            <div class="new-section center">
+                <h6 class="center-align">O que nós fazemos?</h6>
+                <h4 class="center-align">Nossa Especialização</h3>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="valign-wrapper c-header">
+                            <img src="./img/webflow-icon.svg" alt="Webflow Icon"> <h5 class="c-title">Webflow Development</h5>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices dapibus metus at finibus. Donec cursus ante quis lorem efficitur sollicitudin. </p>
+                        <div class="section">
+                            <a class="green-link" href="#">Leia Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="valign-wrapper c-header">
+                            <img src="./img/shopify-icon.svg" alt="Shopify Icon"> <h5 class="c-title">Shopify Development</h5>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices dapibus metus at finibus. Donec cursus ante quis lorem efficitur sollicitudin. </p>
+                        <div class="section">
+                            <a class="green-link" href="#">Leia Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="valign-wrapper c-header">
+                            <img src="./img/figma-icon.svg" alt="Figma Icon"> <h5 class="c-title">Figma Web Designing</h5>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices dapibus metus at finibus. Donec cursus ante quis lorem efficitur sollicitudin. </p>
+                        <div class="section">
+                            <a class="green-link" href="#">Leia Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="valign-wrapper c-header">
+                            <img src="./img/php-icon.svg" alt="PHP Icon"> <h5 class="c-title">PHP Development</h5>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices dapibus metus at finibus. Donec cursus ante quis lorem efficitur sollicitudin. </p>
+                        <div class="section">
+                            <a class="green-link" href="#">Leia Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="section">
+                    <a class="wave-effect waves-light btn-large btn-main" href="#">Saber mais</a>
+                </div>
+            </div>  
+        </div>
+
+        <!-- Portfolio Section -->
+        <div class="container">
+            <div class="new-section center">
+                <h6 class="center-align">Nosso trabalho</h6>
+                <h4 class="center-align">Nosso Portfólio</h3>
+            </div>
+            <div class="portfolio-wrapper">
+                <div class="portfolio-item">
+                    <img src="./img/fashion-page.png" alt="Fashion Landing Page">
+                    <div class="port-item-desc">
+                        <h6 class="p-title">Fashion Landing Page</h6>
+                        <a href="#" class="green-link">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./img/health-page.png" alt="Health & Fitness Landing Page">
+                    <div class="port-item-desc">
+                        <h6 class="p-title">Health & Fitness</h6>
+                        <a href="#" class="green-link">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./img/furniture-page.png" alt="Furniture Shop Landing Page">
+                    <div class="port-item-desc">
+                        <h6 class="p-title">Furniture Shop</h6>
+                        <a href="#" class="green-link">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./img/it-page.png" alt="IT Solution Provider Landing Page">
+                    <div class="port-item-desc">
+                        <h6 class="p-title">IT Solution Provider</h6>
+                        <a href="#" class="green-link">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="section">
+                    <a class="wave-effect waves-light btn-large btn-main" href="#">Ver todos</a>
+                </div>
+            </div>
+
+            <!-- Client Review Section -->
+            <div class="container">
+                <div class="new-section center">
+                    <h6 class="center-align">Depoimentos</h6>
+                    <h4 class="center-align">O que os clientes dizem</h3>
+                </div>
             </div>
         </div>
     </main>
@@ -53,19 +177,19 @@
                 <div class="col s2 offset-s2">
                     <h5>Recursos</h5>
                     <ul>
-                        <li class="footer-link"><a href="#">Nossos agentes</a></li>
-                        <li class="footer-link"><a href="#">História</a></li>
-                        <li class="footer-link"><a href="#">Vídeo</a></li>
-                        <li class="footer-link"><a href="#">Free Trial</a></li>
+                        <li class="footer-link"><a class="link-hover" href="#">Nossos agentes</a></li>
+                        <li class="footer-link"><a class="link-hover" href="#">História</a></li>
+                        <li class="footer-link"><a class="link-hover" href="#">Vídeo</a></li>
+                        <li class="footer-link"><a class="link-hover" href="#">Free Trial</a></li>
                     </ul>
                 </div>
                 <div class="col s2">
                     <h5>Companhia</h5>
                     <ul>
-                        <li class="footer-link"><a href="#">Parcerias</a></li>
-                        <li class="footer-link"><a href="#">Termos de uso</a></li>
-                        <li class="footer-link"><a href="#">Privacidade</a></li>
-                        <li class="footer-link"><a href="#">Sitemap</a></li>
+                        <li class="footer-link"><a class="link-hover" href="#">Parcerias</a></li>
+                        <li class="footer-link"><a class="link-hover" href="#">Termos de uso</a></li>
+                        <li class="footer-link"><a class="link-hover" href="#">Privacidade</a></li>
+                        <li class="footer-link"><a class="link-hover" href="#">Sitemap</a></li>
                     </ul>
                 </div>
                 <div class="col s3">
