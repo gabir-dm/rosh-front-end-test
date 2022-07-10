@@ -251,6 +251,10 @@ i.right {
     box-shadow: 0 24px 38px 0px rgba(0, 0, 0, 0.03), 0 9px 46px 0px rgba(0, 0, 0, 0.03), 0 11px 15px -7px rgba(0, 0, 0, 0.03);
 }
 
+.t-scroll {
+    padding: 50px;
+}
+
 .portfolio-wrapper {
     display: inline-grid;
     grid-template-columns: auto auto;
@@ -314,4 +318,12 @@ i.right {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+}
+
+.contact-input input {
+    margin: 0!important;
+}
+
+.send-btn {
+    height: 16px !important;
 }
