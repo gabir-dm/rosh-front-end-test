@@ -17,9 +17,9 @@ body {
 
 main {
     flex: 1 0 auto;
-    background-image: url(../img/background.png);
+    background-image: url(../img/background-decoration.svg);
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
   }
 
@@ -49,11 +49,20 @@ a {
     background-color: #f2f2f2;
     width: 100%;
     height: 100vh;
-    background-position: center;
+    background-image: url('../img/hero-left.png'), url('../img/hero-right.png');
+    background-position: left, right;
     background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
     margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-section {
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 100vh;
+        background-image: none;
+        margin-top: 0;
+    }
 }
 
 .hero-text {
@@ -101,10 +110,12 @@ a {
 
 .btn-main {
     padding: 0 80px;
+    transition:  0.2s linear;
 }
 
 .btn-main:hover, .btn-main-nav:hover {
     background-color: #52bc10;
+    transition:  0.2s linear;
     box-shadow: 0 24px 38px 0px rgba(0, 0, 0, 0.1), 0 9px 46px 0px rgba(0, 0, 0, 0.1), 0 11px 15px -7px rgba(0, 0, 0, 0.1);
 }
 
@@ -161,6 +172,24 @@ a {
     box-shadow: 0 24px 38px 0px rgba(0, 0, 0, 0.1), 0 9px 46px 0px rgba(0, 0, 0, 0.1), 0 11px 15px -7px rgba(0, 0, 0, 0.1);
 }
 
+.t-btn {
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    padding: 20px;
+    transition:  0.2s linear;
+}
+
+.t-btn img {
+    fill: #313131;
+    width: 20px;
+    height: 20px;
+}
+
+.t-btn:hover {
+    background-color: #313131;
+    transition:  0.2s linear;
+}
+
 i.right {
     margin-left: 3px;
 }
@@ -185,6 +214,7 @@ i.right {
     border: 1px solid #EDEDED;
     border-radius: 5px;
     width: 350px;
+    height:fit-content;
     margin: 20px;
 }
 
@@ -192,6 +222,7 @@ i.right {
     border: none;
     box-shadow: 0 24px 38px 0px rgba(0, 0, 0, 0.044), 0 9px 46px 0px rgba(0, 0, 0, 0.044), 0 11px 15px -7px rgba(0, 0, 0, 0.04);
 }
+
 
 .c-header {
     margin-bottom: 15px;
@@ -209,14 +240,36 @@ i.right {
     text-decoration: underline;
 }
 
-.portfolio-wrapper {
+.t-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+}
+
+.testimonial {
+    border: none !important;
+    box-shadow: 0 24px 38px 0px rgba(0, 0, 0, 0.03), 0 9px 46px 0px rgba(0, 0, 0, 0.03), 0 11px 15px -7px rgba(0, 0, 0, 0.03);
+}
+
+.portfolio-wrapper {
+    display: inline-grid;
+    grid-template-columns: auto auto;
 }
 
 .portfolio-item {
     margin: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .portfolio-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-item img {
+        width: 80%;
+        height: auto;
+    }
 }
 
 .port-item-desc {
