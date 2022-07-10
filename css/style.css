@@ -13,14 +13,14 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
 main {
     flex: 1 0 auto;
     background-image: url(../img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 h1 {
@@ -78,6 +78,17 @@ a {
 .highlight {
     font-family: 'Inter', sans-serif;
     color: #49AD09;
+}
+
+#nav-container {
+    background-color: #ffffff00;
+    transition:  0.2s linear;
+}
+
+.solid-nav {
+    background-color: #ffffff !important;
+    transition:  0.2s linear;
+    box-shadow: 0 24px 38px 0px rgba(0, 0, 0, 0.033), 0 9px 46px 0px rgba(0, 0, 0, 0.033), 0 11px 15px -7px rgba(0, 0, 0, 0.033);
 }
 
 .btn-main-nav, .btn-main {
