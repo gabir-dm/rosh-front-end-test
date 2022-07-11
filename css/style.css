@@ -174,6 +174,7 @@ a {
 
 .t-btn {
     background-color: #f2f2f2;
+    border: none;
     border-radius: 50%;
     padding: 20px;
     transition:  0.2s linear;
@@ -240,19 +241,23 @@ i.right {
     text-decoration: underline;
 }
 
-.t-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
 .testimonial {
     border: none !important;
     box-shadow: 0 24px 38px 0px rgba(0, 0, 0, 0.03), 0 9px 46px 0px rgba(0, 0, 0, 0.03), 0 11px 15px -7px rgba(0, 0, 0, 0.03);
 }
 
+.t-highlight {
+    font-size: 1rem;
+    color: #32435C;
+}
+
 .t-scroll {
-    padding: 50px;
+    position: absolute;
+    bottom: 0;
+}
+
+.rating i{
+    color:#FBB040;
 }
 
 .portfolio-wrapper {
@@ -326,4 +331,8 @@ i.right {
 
 .send-btn {
     height: 16px !important;
+}
+
+@media only screen and (max-width: 600px) {
+
 }

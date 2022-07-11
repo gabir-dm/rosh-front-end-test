@@ -9,3 +9,13 @@ window.addEventListener('scroll',(event) => {
     navbar.classList.remove("solid-nav")
    }
 });
+
+// Initialize Carousel
+
+document.addEventListener('DOMContentLoaded', function(){
+    let carousel = document.querySelectorAll('.carousel')
+    M.Carousel.init(carousel,{
+        dist:5,
+        shift: 5
+    })
+})

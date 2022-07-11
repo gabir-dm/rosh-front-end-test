@@ -10813,8 +10813,8 @@ $jscomp.polyfill = function (e, r, p, m) {
         if (this.options.fullWidth) {
           this.itemWidth = this.$el.find('.carousel-item').first().innerWidth();
           this.imageHeight = this.$el.find('.carousel-item.active').height();
-          this.dim = this.itemWidth * 2 + this.options.padding;
-          this.offset = this.center * 2 * this.itemWidth;
+          this.dim = this.itemWidth * 1 + this.options.padding;
+          this.offset = this.center * 0.5 * this.itemWidth;
           this.target = this.offset;
           this._setCarouselHeight(true);
         } else {
@@ -10824,7 +10824,7 @@ $jscomp.polyfill = function (e, r, p, m) {
 
       /**
        * Set carousel height based on first slide
-       * @param {Booleam} imageOnly - true for image slides
+       * @param {Boolean} imageOnly - true for image slides
        */
 
     }, {
@@ -10995,7 +10995,7 @@ $jscomp.polyfill = function (e, r, p, m) {
           centerTweenedOpacity = 1;
         } else {
           alignment = 'translateX(' + (this.el.clientWidth - this.itemWidth) / 2 + 'px) ';
-          alignment += 'translateY(' + (this.el.clientHeight - this.itemHeight) / 2 + 'px)';
+          alignment += 'translateY(' + (this.el.clientHeight - this.itemHeight) / 6 + 'px)';
           centerTweenedOpacity = 1 - numVisibleOffset * tween;
         }
 
