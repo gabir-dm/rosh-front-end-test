@@ -28,6 +28,16 @@
                             <li><a href="#" class="black-text">Sign In</a></li>
                             <li><a class="btn-large btn-main-nav" href="#">Sign Up</a></li>
                         </ul>
+                        <a href="#" class="dropdown-trigger hide-on-large-only" data-target="dropdown-nav"><i class="material-icons">menu</i></a>
+                        <ul id="dropdown-nav" class="dropdown-content">
+                            <li><a href="#" class="black-text">Home</a></li>
+                            <li><a href="#about-sec" class="black-text">Sobre</a></li>
+                            <li><a href="#testimonials-sec" class="black-text">Depoimentos</a></li>
+                            <li><a href="#contact-sec" class="black-text">Contato</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#" class="black-text">Sign In</a></li>
+                            <li><a href="#" class="black-text">Sign Up</a></li>
+                          </ul>
                     </div>
                 </nav>
             </div>
@@ -214,8 +224,8 @@
                         </div>
                     </div>
                     <div class="t-scroll center">
-                        <button id="prev-btn" class="t-btn"><img src="./img/backward-icon.svg" alt="Voltar"></button>
-                        <button id="next-btn" class="t-btn"><img src="./img/forward-icon.svg" alt="Avançar"></button>
+                        <button onclick="prev()" id="prev-btn" class="t-btn"><img src="./img/backward-icon.svg" alt="Voltar"></button>
+                        <button onclick="next()" id="next-btn" class="t-btn"><img src="./img/forward-icon.svg" alt="Avançar"></button>
                     </div>
             </div>
         </div>
